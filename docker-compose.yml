@@ -1,7 +1,8 @@
 version: '3'
 services:
-  playwright:
+  playwright-test:
     build: .
+    container_name: playwright_api_tests
     volumes:
       - .:/app
     environment:
